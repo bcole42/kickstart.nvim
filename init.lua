@@ -177,13 +177,6 @@ do
   --
   --  To update plugins, run
   --    :lua vim.pack.update()
-  --
-  --
-  --  Throughout the rest of the config there will be examples
-  --  of how to install and configure plugins using `vim.pack`.
-  --
-  --  In this section we set up some autocommands to run build
-  --  steps for certain plugins after they are installed or updated.
 
   local function run_build(name, cmd, cwd)
     local result = vim.system(cmd, { cwd = cwd }):wait()
